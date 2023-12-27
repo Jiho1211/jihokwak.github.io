@@ -1,41 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Name - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Jiho Kwak</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e0736f775f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Jiho Kwak</h1>
-            <p>Web Developer</p>
-        </div>
-    </header>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images\logo.JPG" class="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p>SoftWare Engineer</p>
+      <h1>Hello, I am <span>Jiho</span><br> Kwak.</h1>
+    </div>
+  </div>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a Master's of Computer Science student at Northwestern University. </p>        
-        </div>
-    </section>
+</div>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <!-- Add your project details here -->
-        </div>
-    </section>
+<!--------About me--------------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/JihoKwak.JPG">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <P>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <!-- Add more contact details as needed -->
-        </div>
-    </section>
 
-    <script src="script.js"></script>
+        </P>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('awards')">Awards</p>
+          <p class="tab-links" onclick="opentab('languages')">Languages</p>
+        </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>Programming Languages</span><br>Python Development</li>
+          <li><span>Miscllaneous</span><br>Python Development</li>
+          <li><span>Softskills</span><br>Python Development</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="awards">
+        <ul>
+          <li><span>Dean's List</span><br>Python Development</li>
+          <li><span>Presidential Awards</span><br>Python Development</li>
+          <li><span>Softskills</span><br>Python Development</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="languages">
+        <ul>
+          <li><span>Korean</span><br>Python Development</li>
+          <li><span>Japanese</span><br>Python Development</li>
+          <li><span>English</span><br>Python Development</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---------Education-------->
+
+
+<div id="education">
+  <div class="container">
+    <h1 class="sub-title">Education</h1>
+    <div class="education-list">
+        <div>
+            <i class="fa-solid fa-train-subway"></i>       <h2>Purdue University</h2>
+            <p>
+
+            </p>
+            <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-paw"></i>
+          <h2>Northwestern University</h2>
+          <p>
+
+          </p>
+          <a href="#">learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---------Experience-------->
+<div id="Experience">
+  <div class="container">
+    <h1 class="sub-title">Experience</h1>
+    <div class="experience-list">
+      <div class="experience">
+        <img src="images/JihoKwak.JPG">
+        <div class="layer">
+          <h3>Boiler Time</h3>
+          <p>Hello asdifasiohdfe</p>
+        </div>
+      </div>
+      <div class="experience">
+        <img src="images/JihoKwak.JPG">
+        <div class="layer">
+          <h3>Boiler Time</h3>
+          <p>Hello asdifasiohdfe</p>
+        </div>
+      </div>
+      <div class="experience">
+        <img src="images/JihoKwak.JPG">
+        <div class="layer">
+          <h3>Boiler Time</h3>
+          <p>Hello asdifasiohdfe</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---------Contact-------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>jihokwak1211@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>765-714-7726</p>
+        <div class="social-icons">
+          <a href="https://github.com/Jiho1211"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jiho-kwak/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="" class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="text" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
 </body>
+
 </html>
