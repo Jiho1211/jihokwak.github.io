@@ -7,23 +7,27 @@
   <title>Jiho Kwak</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/e0736f775f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 </head>
 <body>
 <div id="header">
   <div class="container">
     <nav>
-      <img src="images\logo.JPG" class="logo">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Contact</a></li>
+      <a href="#header"><img src="images\logo.JPG" class="logo" ></a>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
       </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
     <div class="header-text">
-      <p>SoftWare Engineer</p>
-      <h1>Hello, I am <span>Jiho</span><br> Kwak.</h1>
+      <p>Software Engineer<br>MS Computer Science @Northwestern University</p>
+      <h1>Hello, I am<br><span>Jiho</span> Kwak.</h1>
     </div>
   </div>
 
@@ -39,8 +43,12 @@
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
         <P>
-
-
+          I am passionate and driven graduate of Computer Science at Northwestern University with experience in mobile application development,
+          web development, machine learning projects, artificial intelligence languages, and multiple team based projects. 
+          I am eager to exercise software engineering knowledge and my programming abilities to help meet 
+          needs and discover solutions in a functioning computing environment. Real world experience working in my field will be 
+          invaluable to me as I pursue my degree and work toward my ultimate goal of discovering new ways to use technology to 
+          improve quality of life for all. 
         </P>
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -49,23 +57,23 @@
         </div>
       <div class="tab-contents active-tab" id="skills">
         <ul>
-          <li><span>Programming Languages</span><br>Python Development</li>
-          <li><span>Miscllaneous</span><br>Python Development</li>
-          <li><span>Softskills</span><br>Python Development</li>
+          <li><span>Programming Languages</span><br>Python, JavaScript, HTML/CSS, Java, C, SQL, PL/SQL, Lisp</li>
+          <li><span>Miscllaneous</span><br>Linux, VMware, Autopsy, MAGNET AXIOM, Microsoft Office, Firebase, React, Git, Google API.</li>
+          <li><span>Softskills</span><br>Time Management, Teamwork, Problem solving, Documentation.</li>
         </ul>
       </div>
       <div class="tab-contents" id="awards">
         <ul>
-          <li><span>Dean's List</span><br>Python Development</li>
-          <li><span>Presidential Awards</span><br>Python Development</li>
-          <li><span>Softskills</span><br>Python Development</li>
+          <li><span>Dean's List</span><br>Dean's List (High Scholastic Standing), Purdue University for 6 consecutive semesters from Fall 2020 - May 2023</li>
+          <li><span>Presidential Awards</span><br>President's Education Award for Education Excellence 
+          (Grading Point Average, School-set criteria, choice of state tests or teacher recommendations) at Liberty Christian Academy in May 2020</li>
         </ul>
       </div>
       <div class="tab-contents" id="languages">
         <ul>
-          <li><span>Korean</span><br>Python Development</li>
-          <li><span>Japanese</span><br>Python Development</li>
-          <li><span>English</span><br>Python Development</li>
+          <li><span>Korean</span><br>Native or bilingual proficiency</li>
+          <li><span>Japanese</span><br>Native or bilingual proficiency (JLPT N1)</li>
+          <li><span>English</span><br>Native or bilingual proficiency</li>
         </ul>
       </div>
       </div>
@@ -75,29 +83,49 @@
 
 <!---------Education-------->
 
-
 <div id="education">
   <div class="container">
     <h1 class="sub-title">Education</h1>
     <div class="education-list">
-        <div>
-            <i class="fa-solid fa-train-subway"></i>       <h2>Purdue University</h2>
-            <p>
-
-            </p>
-            <a href="#">learn more</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-paw"></i>
-          <h2>Northwestern University</h2>
+      <div>
+        <i class="fa-solid fa-train-subway"></i>
+        <h2>Purdue University</h2>
+        <p>West Lafayette, Indiana</p>
+        <div class="layer">
+          <h5>B.S. in Computer and Information Technology 	<span class="year">Aug 2020 - May 2023</span></h5>
           <p>
-
+            Minor in Organizational Leadership
+            <br>GPA: 3.87/4.00
+            <br>
+            <br>Selected Courses: Introduction to Software Development Concepts, Information Technology Architecture,
+            Introduction to Systems Development, System Administration, Object Oriented Programming Introduction,
+            Cybersecurity Fundamentals, Database Fundamentals, Systems Analysis & Design Methods, Systems
+            Programming, Policy, Regulation, & Globalization in Information Technology, Database Programming,
+            Manage Information Technology Project, Front End Web Programming, Applications in Data Science,
+            IT Data Analytics, Advanced Analysis & Design, and Basic Cyber Forensics.
           </p>
-          <a href="#">learn more</a>
+        </div>
+      </div>
+      <div>
+        <i class="fa-solid fa-paw"></i>
+        <h2>Northwestern University</h2>
+        <p>Evanston, Illinois</p>
+        <div class="layer">
+          <h5>M.S. in Computer Science <span class="year">Sept 2020 - Dec 2024(Expected)</span></h5>
+          <p>
+            GPA: 3.85/4.00
+            <br>
+            <br>Selected Courses: Data Structures & Algorithms, AI Programming, Human Computer Interaction,
+             Machine Learning: Foundations, Applications, and Algorithms, Introduction to AI, 
+             Machine Learning, Intro to Computer Graphics, Design, Technology, & Research.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+
 
 <!---------Experience-------->
 <div id="Experience">
@@ -130,6 +158,8 @@
 </div>
 
 
+
+
 <!---------Contact-------->
 <div id="contact">
   <div class="container">
@@ -142,16 +172,16 @@
           <a href="https://github.com/Jiho1211"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/jiho-kwak/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-        <a href="" class="btn btn2">Download Resume</a>
+        <a href="Jiho Kwak Resume.pdf" download class="btn btn2">Download Resume</a>
       </div>
       <div class="contact-right">
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="df0d6ebd-8575-400b-8769-7b8978bd48e5">
           <input type="text" name="Name" placeholder="Your Name" required>
           <input type="text" name="Email" placeholder="Your Email" required>
           <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
           <button type="submit" class="btn btn2">Submit</button>
         </form>
-
       </div>
     </div>
   </div>
@@ -159,6 +189,34 @@
 
 
 <script src="script.js"></script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+      sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+      sidemenu.style.right = "-200px";
+  }
+  const toggle = document.getElementById('toggleDark');
+  const body = document.querySelector('body');
+
+  toggle.addEventListener('click', function(){
+      this.classList.toggle('bi-moon');
+      if(this.classList.toggle('bi-brightness-high-fill')){
+          body.style.background = '#000814';
+          body.style.color = 'white';
+          body.style.transition = '0.5s';
+          
+      }else{
+          body.style.background = '#fefae0';
+          body.style.color = 'black';
+          body.style.transition = '0.5s';
+      }
+  });
+</script>
 </body>
 
 </html>
